@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Montserrat:wght@400;700&family=Permanent+Marker&family=Roboto+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(219, 216, 209);
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+header {
+  color: black;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header > h1 {
+  font-size: xx-large;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  animation: intro 1.5s;
+}
+
+@keyframes intro {
+  0% {
+    transform: scale(0);
+    color: white;
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+    color: black;
+  }
+}
+
+p {
+  font-size: large;
+  margin-bottom: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#setup {
+  font-size: larger;
+  font-weight: 700;
+  color: red;
+}
+
+#punchline {
+  font-size: larger;
+  font-weight: 700;
+  color: green;
+}
+
+.animation {
+  animation: punchline 2s;
+}
+@keyframes punchline {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+form > button {
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 0.2rem;
+  font-size: 1rem;
+  width: 15rem;
+  height: auto;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: rgb(246, 246, 203);
+}
